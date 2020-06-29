@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\TesteExercicioDois.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DefineConstants>TRACE;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
+    <OutputPath>bin\Debug\netcoreapp2.1\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteExercicioDois.Application\TesteExercicioDois.Application.csproj" />
+    <ProjectReference Include="..\TesteExercicioDois.Domain\TesteExercicioDois.Domain.csproj" />
+    <ProjectReference Include="..\TesteExercicioDois.Infra.CrossCuttin.IoC\TesteExercicioDois.Infra.CrossCuttin.IoC.csproj" />
+    <ProjectReference Include="..\TesteExercicioDois.Infra.CrossCutting.Swagger\TesteExercicioDois.Infra.CrossCutting.Swagger.csproj" />
+    <ProjectReference Include="..\TesteExercicioDois.Infra\TesteExercicioDois.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

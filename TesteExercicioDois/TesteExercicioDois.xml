@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TesteExercicioDois</name>
+    </assembly>
+    <members>
+        <member name="M:TesteExercicioDois.Controllers.PrimasController.ValidarStringPrima(TesteExercicioDois.Domain.Dto.ValidarStringPrimaDto)">
+            <summary>
+            Valida se duas strings sao primas
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
